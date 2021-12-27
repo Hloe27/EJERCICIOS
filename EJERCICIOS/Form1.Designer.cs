@@ -136,6 +136,7 @@ namespace EJERCICIOS
             // txtNotauno
             // 
             this.txtNotauno.Location = new System.Drawing.Point(62, 79);
+            this.txtNotauno.MaxLength = 2;
             this.txtNotauno.Name = "txtNotauno";
             this.txtNotauno.Size = new System.Drawing.Size(62, 20);
             this.txtNotauno.TabIndex = 9;
@@ -144,6 +145,7 @@ namespace EJERCICIOS
             // txtNotados
             // 
             this.txtNotados.Location = new System.Drawing.Point(62, 107);
+            this.txtNotados.MaxLength = 2;
             this.txtNotados.Name = "txtNotados";
             this.txtNotados.Size = new System.Drawing.Size(62, 20);
             this.txtNotados.TabIndex = 10;
@@ -152,6 +154,7 @@ namespace EJERCICIOS
             // txtNotatres
             // 
             this.txtNotatres.Location = new System.Drawing.Point(62, 135);
+            this.txtNotatres.MaxLength = 2;
             this.txtNotatres.Name = "txtNotatres";
             this.txtNotatres.Size = new System.Drawing.Size(62, 20);
             this.txtNotatres.TabIndex = 11;
@@ -160,6 +163,7 @@ namespace EJERCICIOS
             // txtNotacuatro
             // 
             this.txtNotacuatro.Location = new System.Drawing.Point(62, 166);
+            this.txtNotacuatro.MaxLength = 2;
             this.txtNotacuatro.Name = "txtNotacuatro";
             this.txtNotacuatro.Size = new System.Drawing.Size(62, 20);
             this.txtNotacuatro.TabIndex = 12;
@@ -168,6 +172,7 @@ namespace EJERCICIOS
             // txtNotacinco
             // 
             this.txtNotacinco.Location = new System.Drawing.Point(62, 194);
+            this.txtNotacinco.MaxLength = 2;
             this.txtNotacinco.Name = "txtNotacinco";
             this.txtNotacinco.Size = new System.Drawing.Size(62, 20);
             this.txtNotacinco.TabIndex = 14;
@@ -303,7 +308,7 @@ namespace EJERCICIOS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "frmPrimero";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,8 +323,6 @@ namespace EJERCICIOS
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtCurso;
         private System.Windows.Forms.TextBox txtNotauno;
         private System.Windows.Forms.TextBox txtNotados;
         private System.Windows.Forms.TextBox txtNotatres;
@@ -334,8 +337,10 @@ namespace EJERCICIOS
         private System.Windows.Forms.Label lblPromedio;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        public System.Windows.Forms.TextBox txtNombre;
+        public System.Windows.Forms.TextBox txtCurso;
+        public System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label label14;
     }
 }
 

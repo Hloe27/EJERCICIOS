@@ -28,11 +28,27 @@ namespace EJERCICIOS
             n4 = double.Parse(txtNotacuatro.Text);
             n5 =double.Parse(txtNotacinco.Text);
 
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                MessageBox.Show("Llenar todos los espacios");
+            }
+          
+
+
             promedio = (n1 + n2 + n3 + n4 + n5) / 5;
 
             lblPromedio.Text = promedio.ToString();
+            label13.Text = txtNombre.Text;
+            label14.Text = txtCurso.Text;
 
-            if (promedio > 10)
+             frmDatos  f2 = new frmDatos();
+
+            
+            f2.Show();
+     
+           //lblCondicion.Text
+
+            if (promedio > 13)
             {
                 lblCondicion.Text = "Aprobado";
                 lblCondicion.ForeColor = Color.Blue;
@@ -64,5 +80,7 @@ namespace EJERCICIOS
                 e.Handled = true;
             }
         }
+
+      
     }
 }
